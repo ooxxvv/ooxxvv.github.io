@@ -6,19 +6,24 @@ AUTHOR = u'ooxxvv.tw'
 SITENAME = u'ooxxvv.tw'
 SITESUBTITLE = u'我的傲慢與偏見'
 SITEURL = ''
-DEFAULT_DATE = 'fs'
-DEFAULT_DATE_FORMAT = ' %Y.%m.%d '
-DEFAULT_CATEGORY = 'None'
-
 
 PATH = 'content'
-OUTPUT_PATH = 'ooxxvv.github.io/'
+OUTPUT_PATH = 'output/'
 
 THEME = "themes/SoMA2"
 
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
+
+# Static paths
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
+# Default metadata
+DEFAULT_DATE = 'fs'
+DEFAULT_DATE_FORMAT = ' %Y.%m.%d '
+DEFAULT_CATEGORY = 'None'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
