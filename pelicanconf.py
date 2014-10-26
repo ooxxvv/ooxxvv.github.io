@@ -6,6 +6,10 @@ AUTHOR = u'ooxxvv.tw'
 SITENAME = u'ooxxvv.tw'
 SITESUBTITLE = u'我的傲慢與偏見'
 SITEURL = ''
+DEFAULT_DATE = 'fs'
+DEFAULT_DATE_FORMAT = ' %Y.%m.%d '
+DEFAULT_CATEGORY = 'None'
+
 
 PATH = 'content'
 OUTPUT_PATH = 'ooxxvv.github.io/'
