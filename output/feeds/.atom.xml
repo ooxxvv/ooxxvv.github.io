@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ooxxvv.tw</title><link href="/" rel="alternate"></link><link href="/feeds/.atom.xml" rel="self"></link><id>/</id><updated>2014-10-25T00:00:00+02:00</updated><entry><title>Error of Pelican - No module named html_parser</title><link href="/.html" rel="alternate"></link><updated>2014-10-25T00:00:00+02:00</updated><author><name></name></author><id>tag:,2014-10-25:.html</id><summary type="html">&lt;h1&gt;Error of Pelican - No module named html_parser&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;安裝 Pelican 時出現以下錯誤：No module named html_parser&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 Python 的環境下輸入下列指令：&lt;/li&gt;
+&lt;li&gt;import six&lt;/li&gt;
+&lt;li&gt;printf six.&lt;strong&gt;version&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;就會出現目前的版本編號為 1.4.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解決方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six/ 下載 source，解壓縮後用下列指令安裝：&lt;/li&gt;
+&lt;li&gt;sudo python setup.py install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term=""></category></entry></feed>

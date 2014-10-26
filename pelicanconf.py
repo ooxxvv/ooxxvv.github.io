@@ -4,10 +4,13 @@ from __future__ import unicode_literals
 
 AUTHOR = u'ooxxvv.tw'
 SITENAME = u'ooxxvv.tw'
+SITESUBTITLE = u'我的傲慢與偏見'
 SITEURL = ''
 
 PATH = 'content'
 OUTPUT_PATH = 'ooxxvv.github.io/'
+
+THEME = "themes/SoMA2"
 
 TIMEZONE = 'Europe/Paris'
 
