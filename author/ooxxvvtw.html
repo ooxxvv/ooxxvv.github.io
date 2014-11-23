@@ -41,9 +41,9 @@
 <!--         <br/> -->
 <!--         <br/> -->
 <!--      -->        
-<!--       <li><a href="">Error of Pelican on Mac - No module named html_parser</a></li> -->
-<!--      -->        
 <!--       <li><a href="">Linux Mint</a></li> -->
+<!--      -->        
+<!--       <li><a href="">Error of Pelican on Mac - No module named html_parser</a></li> -->
 <!--      -->
 <!--  -->
     <!-- </ul> -->
@@ -70,45 +70,13 @@
             <aside id="featured">
                 <div class="body">
                     <article>
-                        <h1 class="entry-title"><a href="/error-of-pelican-on-mac-no-module-named-html_parser.html">Error of Pelican on Mac - No module named html_parser</a></h1>
-<div class="post-info">
-	<ul>
-        <li class="vcard author">
-                 by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
-        </li>
-        <li class="published" title="2014-11-23T14:56:19.103268+08:00">
-          on&nbsp; 2014.11.23 
-        </li>
-
-	</ul>
-
-</div><!-- /.post-info --><ul>
-<li>安裝 Pelican 時出現以下錯誤：No module named html_parser</li>
-<li>這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：</li>
-<li>在 Python 的環境下輸入下列指令：</li>
-<li>import six</li>
-<li>printf six.<strong>version</strong></li>
-<li>就會出現目前的版本編號為 1.4.1</li>
-<li>解決方法：</li>
-<li>不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six ...</li></ul>
-                    </article>
-                </div>
-            </aside><!-- /#featured -->
-            
-        
-        
-
-    
-            <aside id="featured">
-                <div class="body">
-                    <article>
                         <h1 class="entry-title"><a href="/linux-mint.html">Linux Mint</a></h1>
 <div class="post-info">
 	<ul>
         <li class="vcard author">
                  by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
         </li>
-        <li class="published" title="2014-11-23T14:43:20.367297+08:00">
+        <li class="published" title="2014-11-23T17:09:49.994973+08:00">
           on&nbsp; 2014.11.23 
         </li>
 
@@ -123,19 +91,64 @@
 <li>啟用 NIDIA Driver</li>
 <li>工作區 =&gt; 只保留一個</li>
 <li>工作列 =&gt; 放到上方</li>
-<li>視窗管理程式調校</li>
+<li>視窗管理程式調校<ul>
 <li>不要自動鋪展視窗</li>
 <li>觸發智慧視窗配置大為最小</li>
-<li>字型</li>
+</ul>
+</li>
+<li>字型<ul>
 <li>安裝 Noto Sans CJT TC, MyHeiBVSmono</li>
 <li>修改系統 &amp; 視窗字型</li>
-<li>Mouse</li>
+</ul>
+</li>
+<li>Mouse<ul>
 <li>靈敏度調整</li>
 <li>換掉 Cursor Theme</li>
+</ul>
+</li>
 <li>Disable screen saver</li>
 <li>修改電源設定，尤其是關上螢幕的動作</li>
-<li>修改熱鍵</li>
-<li>xfce 的熱鍵預設檔加上 .bak =&gt; ~/.config/xfce4 ...</li></ul>
+<li>修改熱鍵<ul>
+<li>xfce 的熱鍵預設檔加上 .bak =&gt; ~/.config/xfce4 ...</li></ul></li></ul>
+                    </article>
+                </div>
+            </aside><!-- /#featured -->
+            
+        
+        
+
+    
+            <aside id="featured">
+                <div class="body">
+                    <article>
+                        <h1 class="entry-title"><a href="/error-of-pelican-on-mac-no-module-named-html_parser.html">Error of Pelican on Mac - No module named html_parser</a></h1>
+<div class="post-info">
+	<ul>
+        <li class="vcard author">
+                 by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
+        </li>
+        <li class="published" title="2014-11-23T17:06:26.482980+08:00">
+          on&nbsp; 2014.11.23 
+        </li>
+
+	</ul>
+
+</div><!-- /.post-info --><ul>
+<li>安裝 Pelican 時出現以下錯誤：No module named html_parser<ul>
+<li>這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：</li>
+<li>在 Python 的環境下輸入下列指令檢查版本：</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span class="n">import</span> <span class="n">six</span>
+<span class="n">printf</span> <span class="n">six</span><span class="p">.</span><span class="n">__version__</span>
+</pre></div>
+
+
+<ul>
+<li>解決方法：<ul>
+<li>不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six/ 下載 source，解壓縮後用下列指令安裝：</li>
+<li>sudo ...</li></ul></li></ul>
                     </article>
  
 <div class="paginator">
