@@ -25,14 +25,14 @@
 <body id="index" class="home">
 	
   <!-- <header id="banner" class="body"> -->
-  <!--               <h1><a href="/"><img src="http://www.launchyard.com/images/logo.png" /><strong>我的傲慢與偏見</strong></a></h1> -->
+  <!--               <h1><a href="/"><img src="http://www.launchyard.com/images/logo.png" /><strong>ooxxvv.tw</strong></a></h1> -->
   <!--       </header> --> 
 
   <div class="LaunchyardDetail">
     <!-- <p> -->
     <!-- <img src="/theme/images/blue-pin.png" width="100" height="100" alt="Graph icon"> -->
     <!-- </p> -->
-    <p><a id="sitesubtitle" href="/">我的傲慢與偏見</a></p>
+    <p><a id="sitesubtitle" href="/">ooxxvv.tw</a></p>
     <p><a id="aboutlink" href="/pages/about.html">about</a></p>
 
     <!-- <ul> -->
@@ -42,9 +42,9 @@
 <!--         <br/> -->
 <!--         <br/> -->
 <!--      -->        
-<!--       <li><a href="">Linux Mint</a></li> -->
+<!--       <li><a href="">Error of Pelican on Mac - No module named html_parser</a></li> -->
 <!--      -->        
-<!--       <li><a href="">Error of Pelican - No module named html_parser</a></li> -->
+<!--       <li><a href="">Linux Mint</a></li> -->
 <!--      -->
 <!--  -->
     <!-- </ul> -->
@@ -71,13 +71,45 @@
             <aside id="featured">
                 <div class="body">
                     <article>
+                        <h1 class="entry-title"><a href="/error-of-pelican-on-mac-no-module-named-html_parser.html">Error of Pelican on Mac - No module named html_parser</a></h1>
+<div class="post-info">
+	<ul>
+        <li class="vcard author">
+                 by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
+        </li>
+        <li class="published" title="2014-11-23T14:56:19.103268+08:00">
+          on&nbsp; 2014.11.23 
+        </li>
+
+	</ul>
+
+</div><!-- /.post-info --><ul>
+<li>安裝 Pelican 時出現以下錯誤：No module named html_parser</li>
+<li>這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：</li>
+<li>在 Python 的環境下輸入下列指令：</li>
+<li>import six</li>
+<li>printf six.<strong>version</strong></li>
+<li>就會出現目前的版本編號為 1.4.1</li>
+<li>解決方法：</li>
+<li>不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six ...</li></ul>
+                    </article>
+                </div>
+            </aside><!-- /#featured -->
+            
+        
+        
+
+    
+            <aside id="featured">
+                <div class="body">
+                    <article>
                         <h1 class="entry-title"><a href="/linux-mint.html">Linux Mint</a></h1>
 <div class="post-info">
 	<ul>
         <li class="vcard author">
                  by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
         </li>
-        <li class="published" title="2014-11-23T14:43:20.367297+01:00">
+        <li class="published" title="2014-11-23T14:43:20.367297+08:00">
           on&nbsp; 2014.11.23 
         </li>
 
@@ -105,38 +137,6 @@
 <li>修改電源設定，尤其是關上螢幕的動作</li>
 <li>修改熱鍵</li>
 <li>xfce 的熱鍵預設檔加上 .bak =&gt; ~/.config/xfce4 ...</li></ul>
-                    </article>
-                </div>
-            </aside><!-- /#featured -->
-            
-        
-        
-
-    
-            <aside id="featured">
-                <div class="body">
-                    <article>
-                        <h1 class="entry-title"><a href="/error-of-pelican-no-module-named-html_parser.html">Error of Pelican - No module named html_parser</a></h1>
-<div class="post-info">
-	<ul>
-        <li class="vcard author">
-                 by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
-        </li>
-        <li class="published" title="2014-11-22T12:59:06.092310+01:00">
-          on&nbsp; 2014.11.22 
-        </li>
-
-	</ul>
-
-</div><!-- /.post-info --><ul>
-<li>安裝 Pelican 時出現以下錯誤：No module named html_parser</li>
-<li>這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：</li>
-<li>在 Python 的環境下輸入下列指令：</li>
-<li>import six</li>
-<li>printf six.<strong>version</strong></li>
-<li>就會出現目前的版本編號為 1.4.1</li>
-<li>解決方法：</li>
-<li>不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six ...</li></ul>
                     </article>
  
 <div class="paginator">
