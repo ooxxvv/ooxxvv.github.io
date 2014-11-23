@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ooxxvv.tw</title><link>/</link><description>ooxxvv.tw</description><atom:link href="/feeds/ooxxvvtw.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 23 Nov 2014 14:56:19 +0800</lastBuildDate><item><title>Error of Pelican on Mac - No module named html_parser</title><link>/error-of-pelican-on-mac-no-module-named-html_parser.html</link><description>&lt;ul&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ooxxvv.tw</title><link>/</link><description>ooxxvv.tw</description><atom:link href="/feeds/ooxxvvtw.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 23 Nov 2014 15:06:13 +0800</lastBuildDate><item><title>about</title><link>/about.html</link><description>&lt;h1&gt;About Me&lt;/h1&gt;
+&lt;p&gt;ooxxvv.tw&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ooxxvv.tw</dc:creator><pubDate>Sun, 23 Nov 2014 15:06:13 +0800</pubDate><guid>tag:,2014-11-23:about.html</guid></item><item><title>Error of Pelican on Mac - No module named html_parser</title><link>/error-of-pelican-on-mac-no-module-named-html_parser.html</link><description>&lt;ul&gt;
 &lt;li&gt;安裝 Pelican 時出現以下錯誤：No module named html_parser&lt;/li&gt;
 &lt;li&gt;這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：&lt;/li&gt;
 &lt;li&gt;在 Python 的環境下輸入下列指令：&lt;/li&gt;
