@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>ooxxvv.tw - ooxxvv.tw</title>
+        <title>ooxxvv.tw - ooxxvv</title>
         <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/theme/images/favicon.ico"/>
@@ -33,6 +33,7 @@
     <!-- <img src="/theme/images/blue-pin.png" width="100" height="100" alt="Graph icon"> -->
     <!-- </p> -->
     <p><a id="sitesubtitle" href="/">ooxxvv.tw</a></p>
+    <!--p><a id="aboutlink" href="/pages/about.html">about</a></p-->
 
     <!-- <ul> -->
     <!--   <li><a href="/pages/about.html">about</a></li> -->
@@ -41,9 +42,9 @@
 <!--         <br/> -->
 <!--         <br/> -->
 <!--      -->        
-<!--       <li><a href="">Linux Mint</a></li> -->
+<!--       <li><a href="">Error of Pelican in MAC</a></li> -->
 <!--      -->        
-<!--       <li><a href="">Error of Pelican on Mac - No module named html_parser</a></li> -->
+<!--       <li><a href="">My Desktop with Linux Mint</a></li> -->
 <!--      -->
 <!--  -->
     <!-- </ul> -->
@@ -70,46 +71,29 @@
             <aside id="featured">
                 <div class="body">
                     <article>
-                        <h1 class="entry-title"><a href="/linux-mint.html">Linux Mint</a></h1>
+                        <h1 class="entry-title"><a href="/error-of-pelican-in-mac.html">Error of Pelican in MAC</a></h1>
 <div class="post-info">
 	<ul>
         <li class="vcard author">
-                 by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
+                 by&nbsp;<a class="url fn" href="/author/ooxxvv.html">ooxxvv</a>
         </li>
-        <li class="published" title="2014-11-23T17:09:49.994973+08:00">
-          on&nbsp; 2014.11.23 
+        <li class="published" title="2015-02-24T12:01:01.999701+01:00">
+          on&nbsp; 2015.02.24 
         </li>
 
 	</ul>
 
-</div><!-- /.post-info --><h1>Linux Mint</h1>
-<p>Linux Mint xfce 真是個好東西，看來可以開始用它來做為主力的桌面系統了。</p>
-<h2>System Setting</h2>
-<ul>
-<li>關掉休眠 =&gt; 在我使用 Thinkpad 的這十幾年中，休眠後一直沒有成功喚醒過……</li>
-<li>修改軟體安裝來源</li>
-<li>啟用 NIDIA Driver</li>
-<li>工作區 =&gt; 只保留一個</li>
-<li>工作列 =&gt; 放到上方</li>
-<li>視窗管理程式調校<ul>
-<li>不要自動鋪展視窗</li>
-<li>觸發智慧視窗配置大為最小</li>
-</ul>
-</li>
-<li>字型<ul>
-<li>安裝 Noto Sans CJT TC, MyHeiBVSmono</li>
-<li>修改系統 &amp; 視窗字型</li>
-</ul>
-</li>
-<li>Mouse<ul>
-<li>靈敏度調整</li>
-<li>換掉 Cursor Theme</li>
-</ul>
-</li>
-<li>Disable screen saver</li>
-<li>修改電源設定，尤其是關上螢幕的動作</li>
-<li>修改熱鍵<ul>
-<li>xfce 的熱鍵預設檔加上 .bak =&gt; ~/.config/xfce4 ...</li></ul></li></ul>
+</div><!-- /.post-info --><h3>安裝 Pelican 時出現以下錯誤：No module named html_parser</h3>
+<p>這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：</p>
+<p>在 Python 的環境下輸入下列指令：</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">six</span>
+<span class="n">printf</span> <span class="n">six</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+
+
+<p>就會出現目前的版本編號為 1.4.1</p>
+<h3>解決方法：</h3>
+<p>不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six ...</p>
                     </article>
                 </div>
             </aside><!-- /#featured -->
@@ -121,34 +105,47 @@
             <aside id="featured">
                 <div class="body">
                     <article>
-                        <h1 class="entry-title"><a href="/error-of-pelican-on-mac-no-module-named-html_parser.html">Error of Pelican on Mac - No module named html_parser</a></h1>
+                        <h1 class="entry-title"><a href="/my-desktop-with-linux-mint.html">My Desktop with Linux Mint</a></h1>
 <div class="post-info">
 	<ul>
         <li class="vcard author">
-                 by&nbsp;<a class="url fn" href="/author/ooxxvvtw.html">ooxxvv.tw</a>
+                 by&nbsp;<a class="url fn" href="/author/ooxxvv.html">ooxxvv</a>
         </li>
-        <li class="published" title="2014-11-23T17:06:26.482980+08:00">
-          on&nbsp; 2014.11.23 
+        <li class="published" title="2015-02-24T11:14:20.767812+01:00">
+          on&nbsp; 2015.02.24 
         </li>
 
 	</ul>
 
-</div><!-- /.post-info --><ul>
-<li>安裝 Pelican 時出現以下錯誤：No module named html_parser<ul>
-<li>這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：</li>
-<li>在 Python 的環境下輸入下列指令檢查版本：</li>
+</div><!-- /.post-info --><h3>Dropbox</h3>
+<ul>
+<li>Install &amp; Login </li>
 </ul>
-</li>
+<h3>Firefox</h3>
+<ul>
+<li>Link setting form Dropbox</li>
 </ul>
-<div class="highlight"><pre><span class="n">import</span> <span class="n">six</span>
-<span class="n">printf</span> <span class="n">six</span><span class="p">.</span><span class="n">__version__</span>
+<div class="highlight"><pre>ln -s ~/Dropbox/pData/Firefox/chrome/
 </pre></div>
 
 
+<h3>Synapse</h3>
 <ul>
-<li>解決方法：<ul>
-<li>不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six/ 下載 source，解壓縮後用下列指令安裝：</li>
-<li>sudo ...</li></ul></li></ul>
+<li>Hotkey: alt+space</li>
+</ul>
+<div class="highlight"><pre>sudo add-apt-repository ppa:synapse-core/ppa
+sudo apt-get update
+sudo apt-get install synapse
+ln -sf ~/Dropbox/pData/Linux/applications ~/.local/share/
+</pre></div>
+
+
+<h3>Mouse</h3>
+<ul>
+<li>Adjustin setting</li>
+<li>Linke theme forlder</li>
+</ul>
+<div class="highlight"><pre>ln -s ~/Dropbox/pData/Linux/cursor_theme ...</pre></div>
                     </article>
  
 <div class="paginator">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>ooxxvv.tw</title><link href="/" rel="alternate"></link><link href="/feeds/none.atom.xml" rel="self"></link><id>/</id><updated>2015-02-24T12:01:01+01:00</updated><entry><title>Error of Pelican in MAC</title><link href="/error-of-pelican-in-mac.html" rel="alternate"></link><updated>2015-02-24T12:01:01+01:00</updated><author><name>ooxxvv</name></author><id>tag:,2015-02-24:error-of-pelican-in-mac.html</id><summary type="html">&lt;h3&gt;安裝 Pelican 時出現以下錯誤：No module named html_parser&lt;/h3&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ooxxvv.tw</title><link>/</link><description>ooxxvv.tw</description><atom:link href="/feeds/ooxxvv.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 24 Feb 2015 12:01:01 +0100</lastBuildDate><item><title>Error of Pelican in MAC</title><link>/error-of-pelican-in-mac.html</link><description>&lt;h3&gt;安裝 Pelican 時出現以下錯誤：No module named html_parser&lt;/h3&gt;
 &lt;p&gt;這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：&lt;/p&gt;
 &lt;p&gt;在 Python 的環境下輸入下列指令：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;six&lt;/span&gt;
@@ -11,7 +11,7 @@
 &lt;h3&gt;解決方法：&lt;/h3&gt;
 &lt;p&gt;不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six/ 下載 source，解壓縮後用下列指令安裝：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo python setup.py install
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>My Desktop with Linux Mint</title><link href="/my-desktop-with-linux-mint.html" rel="alternate"></link><updated>2015-02-24T11:14:20+01:00</updated><author><name>ooxxvv</name></author><id>tag:,2015-02-24:my-desktop-with-linux-mint.html</id><summary type="html">&lt;h3&gt;Dropbox&lt;/h3&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ooxxvv</dc:creator><pubDate>Tue, 24 Feb 2015 12:01:01 +0100</pubDate><guid>tag:,2015-02-24:error-of-pelican-in-mac.html</guid></item><item><title>My Desktop with Linux Mint</title><link>/my-desktop-with-linux-mint.html</link><description>&lt;h3&gt;Dropbox&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Install &amp;amp; Login &lt;/li&gt;
 &lt;/ul&gt;
@@ -154,4 +154,4 @@ sudo pip install virtualenv
 &lt;span class="x"&gt;echo &amp;#39;export PATH=&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;PYENV_ROOT&lt;/span&gt;&lt;span class="x"&gt;/bin:&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="x"&gt;&amp;quot;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&lt;/span&gt;
 &lt;span class="x"&gt;echo &amp;#39;eval &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;$(&lt;/span&gt;&lt;span class="err"&gt;pyenv&lt;/span&gt; &lt;span class="err"&gt;init&lt;/span&gt; &lt;span class="err"&gt;-&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&amp;quot;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&lt;/span&gt;
 &lt;span class="x"&gt;exec &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;SHELL&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary></entry></feed>
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">ooxxvv</dc:creator><pubDate>Tue, 24 Feb 2015 11:14:20 +0100</pubDate><guid>tag:,2015-02-24:my-desktop-with-linux-mint.html</guid></item></channel></rss>
