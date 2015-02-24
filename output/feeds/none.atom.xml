@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ooxxvv.tw</title><link href="/" rel="alternate"></link><link href="/feeds/none.atom.xml" rel="self"></link><id>/</id><updated>2015-02-24T12:01:01+01:00</updated><entry><title>Error of Pelican in MAC</title><link href="/error-of-pelican-in-mac.html" rel="alternate"></link><updated>2015-02-24T12:01:01+01:00</updated><author><name>ooxxvv</name></author><id>tag:,2015-02-24:error-of-pelican-in-mac.html</id><summary type="html">&lt;h3&gt;安裝 Pelican 時出現以下錯誤：No module named html_parser&lt;/h3&gt;
+&lt;p&gt;這是因為 Mac 自帶的 six module 是 1.4.1 版，所以會發生這個問題，即使用 pip 安裝 six 最新版，仍然無法蓋過去。檢查方式如下：&lt;/p&gt;
+&lt;p&gt;在 Python 的環境下輸入下列指令：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;six&lt;/span&gt;
+&lt;span class="n"&gt;printf&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__version__&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;就會出現目前的版本編號為 1.4.1&lt;/p&gt;
+&lt;h3&gt;解決方法：&lt;/h3&gt;
+&lt;p&gt;不要用 pip 安裝，直接到 six 的官網：https://pypi.python.org/pypi/six/ 下載 source，解壓縮後用下列指令安裝：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo python setup.py install
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>My Desktop with Linux Mint</title><link href="/my-desktop-with-linux-mint.html" rel="alternate"></link><updated>2015-02-24T11:14:20+01:00</updated><author><name>ooxxvv</name></author><id>tag:,2015-02-24:my-desktop-with-linux-mint.html</id><summary type="html">&lt;h3&gt;Dropbox&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &amp;amp; Login &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Firefox&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Link setting form Dropbox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ln -s ~/Dropbox/pData/Firefox/chrome/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Synapse&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hotkey: alt+space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:synapse-core/ppa
+sudo apt-get update
+sudo apt-get install synapse
+ln -sf ~/Dropbox/pData/Linux/applications ~/.local/share/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Mouse&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adjustin setting&lt;/li&gt;
+&lt;li&gt;Linke theme forlder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ln -s ~/Dropbox/pData/Linux/cursor_theme/ooxxvv-theme/ ~/.icons
+ln -s ~/Dropbox/pData/Linux/cursor_theme/dummy-theme/ ~/.icons
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Desktop&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Setup Icon &amp;amp; Wallpaper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Font&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo ln -s ~/Dropbox/BigFiles/Fonts/ /usr/share/fonts/fontfiles
+sudo fc-cache -fv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Fcitx&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;LightUI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;  * ln -s ~/Dropbox/pData/fcitx ~/.config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Git&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Keepass2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Global HotKey: ctrl+alt+a: keepass2 --auto-type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install xdotool
+sudo add-apt-repository ppa:dlech/keepass2-plugins
+sudo apt-get update
+sudo apt-get install keepass2-plugin-application-indicator
+ln -s ~/Dropbox/pData/Keepass/keepassx ~/.config/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Duble Commander&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;doublecmd-gtk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;  * ln -sf ~/Dropbox/pData/DoubleCommander/doublecmd ~/.config/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Diodon&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hotkey: Ctrl+Shift+x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;vim-gtk&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ln -s ~/Dropbox/pData/Vim/vimrc ~/.vim/vimrc
+ln -s ~/Dropbox/pData/Vim/colors ~/.vim/colors
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+:PluginInstall
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;YCM&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;   * sudo apt-get install build-essential cmake
+   * sudo apt-get install python-dev
+   * cd ~/.vim/bundle/YouCompleteMe
+   * ./install.sh --clang-completer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Ctags&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install exuberant-ctags
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Goldendict&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hotkey: ctrl+alt+z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;zsh&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;chsh -s /bin/zsh
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+ln -sf ~/Dropbox/pData/zsh/.zshrc ~/.zshrc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Vbox&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download form offical site&lt;/li&gt;
+&lt;li&gt;Install Extension Pack &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Thunderbird&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ln -s ~/Dropbox/pData/Thunderbird/chrome
+ln -sf ~/Dropbox/pData/Thunderbird/abook.mab
+ln -sf ~/Dropbox/pData/Thunderbird/key3.db
+ln -sf ~/Dropbox/pData/Thunderbird/prefs.js
+ln -sf ~/Dropbox/pData/Thunderbird/signons.sqlite 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Pip&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;apt-get install python-pip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Pyenv &amp;amp; Pyenv-virtualenv&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+sudo pip install virtualenv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Pyenv for zsh&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;echo &amp;#39;export PYENV_ROOT=&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/.pyenv&amp;quot;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&lt;/span&gt;
+&lt;span class="x"&gt;echo &amp;#39;export PATH=&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;PYENV_ROOT&lt;/span&gt;&lt;span class="x"&gt;/bin:&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="x"&gt;&amp;quot;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&lt;/span&gt;
+&lt;span class="x"&gt;echo &amp;#39;eval &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;$(&lt;/span&gt;&lt;span class="err"&gt;pyenv&lt;/span&gt; &lt;span class="err"&gt;init&lt;/span&gt; &lt;span class="err"&gt;-&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&amp;quot;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc&lt;/span&gt;
+&lt;span class="x"&gt;exec &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;SHELL&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry></feed>
